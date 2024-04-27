@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ML Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body class="result">
+    
+    <h2 class="resulth2">Prediction Result:</h2>
+    <p class="resulth2">The predicted value is: {{predictionValue}}</p>
+    <h3 id="predictionComment"></h3>
+
+    <input type="hidden" id="predictionInt" value="{{ predictionInt }}">
+
+    <script>
+
+    var predictionInt = parseInt(document.getElementById('predictionInt').value); 
+
+
+        var predictionComment = document.getElementById('predictionComment');
+        var resultBody = document.getElementsByClassName('result');
+
+        
+
+        if (predictionInt >= 1 && predictionInt <= 5) {
+            predictionComment.textContent = "Needs significant improvement. Immediate intervention recommended.";
+            document.body.classList.add('color-1');
+        } else if (predictionInt >= 6 && predictionInt <= 7) {
+            predictionComment.textContent = "Below average performance. Requires focused attention and extra support.";
+            document.body.classList.add('color-2');
+        } else if (predictionInt >= 8 && predictionInt <= 9) {
+            predictionComment.textContent = "Average performance. Steady progress, but room for improvement.";
+            document.body.classList.add('color-3');
+        } else if (predictionInt >= 10 && predictionInt <= 11) {
+            predictionComment.textContent = "Satisfactory performance. Maintaining acceptable standards.";
+            document.body.classList.add('color-4');
+        } else if (predictionInt >= 12 && predictionInt <= 13) {
+            predictionComment.textContent = "Good performance. On track with expectations.";
+            document.body.classList.add('color-5');
+        } else if (predictionInt >= 14 && predictionInt <= 15) {
+            predictionComment.textContent = "Very good performance. Demonstrating strong understanding and application.";
+            document.body.classList.add('color-6');
+        } else if (predictionInt >= 16 && predictionInt <= 17) {
+            predictionComment.textContent = "Excellent performance. Consistently excelling in academics.";
+            document.body.classList.add('color-7');
+        } else if (predictionInt >= 18 && predictionInt <= 19) {
+            predictionComment.textContent = "Outstanding performance. Among the top performers in the class.";
+            document.body.classList.add('color-8');
+        } else if (predictionInt === 20) {
+            predictionComment.textContent = "Exceptional performance. Exemplary achievement, setting a high standard for others.";
+            document.body.classList.add('color-9');
+        } else {
+            predictionComment.textContent = "Invalid Prediction Value";
+            document.body.classList.add('color-10');
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

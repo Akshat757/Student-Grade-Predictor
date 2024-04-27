@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Prediction</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body class="indexBody">
+    <h2>Student Grade Prediction</h2>
+    <form action="/predict" method="post" class="form-columns">
+        <div class="form-column">
+            <label for="input1">School (0 for Good, 1 for Bad):</label>
+            <input type="text" value=0 id="input1" name="input1"><br>
+
+            <label for="input2">Sex (0 for male, 1 for female):</label>
+            <input type="text" value=0 id="input2" name="input2"><br>
+
+            <label for="input3">Age:</label>
+            <input type="text" value=20 id="input3" name="input3"><br>
+
+            <label for="input4">Family Size :</label>
+            <input type="text" value=3 id="input4" name="input4"><br>
+
+            <label for="input5">Mother's Education (0-5):</label>
+            <input type="text" value=0 id="input5" name="input5"><br>
+
+            <label for="input6">Father's Education (0-5):</label>
+            <input type="text" value=0 id="input6" name="input6"><br>
+
+            <label for="input7">Mother's Job (0-5): </label>
+            <input type="text" value=0 id="input7" name="input7"><br>
+            </div>
+
+            <div class="form-column">
+
+            <label for="input8">Father's Job (0-5):</label>
+            <input type="text" value=0 id="input8" name="input8"><br>
+
+            <label for="input9">Travel Time (0-5):</label>
+            <input type="text" value=1 id="input9" name="input9"><br>
+            
+            <!-- <button >Submit</button> -->
+
+            <label for="input10">Study Time (0-5): </label>
+            <input type="text" value=1 id="input10" name="input10"><br>
+            
+            <label for="input11">Failures (0-5):</label>
+            <input type="text" value=0 id="input11" name="input11"><br>
+            
+            <label for="input12">School Support (0 for no, 1 for yes):</label>
+            <input type="text" value=0 id="input12" name="input12"><br>
+            
+            <label for="input13">Family Support (0 for no, 1 for yes): </label>
+            <input type="text" value=0 id="input13" name="input13"><br>
+
+            <div class="button-container">
+                <button type="submit" id="predictButton">Predict</button>
+            </div>
+            
+            </div>
+            
+            <div class="form-column">
+                
+            <label for="input14">Extra Paid Classes (0 for no, 1 for yes):</label>
+            <input type="text" value=0 id="input14" name="input14"><br>
+
+            <label for="input15">Extra-curricular Activities (0 for no, 1 for yes):</label>
+            <input type="text" value=0 id="input15" name="input15"><br>
+
+            <label for="input16">Nursery School (0 for no, 1 for yes):</label>
+            <input type="text" value=0 id="input16" name="input16"><br>
+
+            <label for="input17">Wants to Take Higher Education (0 for no, 1 for yes):</label>
+            <input type="text" value=0 id="input17" name="input17"><br>
+
+            <label for="input18">Going Out with Friends (0-5):</label>
+            <input type="text" value=1 id="input18" name="input18"><br>
+
+            <label for="input19">Workday Alcohol Consumption (0-5):</label>
+            <input type="text" value=1 id="input19" name="input19"><br>
+        </div>
+    </form>
+</body>
+</html>
